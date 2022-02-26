@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package wlb;
+
+message ServerInfo
+{
+    string address = 1;
+    uint32 port = 2;
+}
+
+message Hi{
+    string type = 1;
+    string client_id = 2;
+    string message = 3;
+}
+
+message Hello{
+    string type = 1;
+    ServerInfo book_server = 2;
+    ServerInfo sit_server = 3;
+    string message = 4;
+}
