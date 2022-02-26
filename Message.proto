@@ -29,7 +29,7 @@ enum MessageType
 {
     ERROR = 0;
     REQUEST = 1;
-    RETURN = 2;
+    RESPONSE = 2;
 }
 
 message Request{
@@ -39,7 +39,7 @@ message Request{
     MessageBody body = 4;
 }
 
-message Return{
+message Response{
     int32 version = 1;
     MessageType type = 2;
     string message = 3;
