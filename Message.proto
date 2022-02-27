@@ -8,6 +8,15 @@ message ServerInfo
     uint32 port = 2;
 }
 
+message Error{
+    int32 code = 1;
+    string message = 2;
+}
+
+message Success{
+    int32 code = 1;
+}
+
 message Hi{
     string client_id = 1;
 }
@@ -16,11 +25,25 @@ message Hello{
     ServerInfo master_server = 1;
 }
 
-message MessageBody
+message Login{
+    string user_name = 1;
+    string password = 2;
+}
+
+message RequestBody
 {
     oneof body {
         Hi hibody = 1;
-        Hello hellobody = 2;
+        Login loginbody = 2;
+    }
+}
+
+message ResponseBody
+{
+    oneof body {
+        Error errorbody = 1;
+        Success successbody = 2;
+        Hello hellobody = 3;
     }
 }
 
@@ -33,14 +56,11 @@ enum MessageType
 
 message Request{
     int32 version = 1;
-    MessageType type = 2;
-    int32 id = 3;
-    MessageBody body = 4;
+    int32 id = 2;
+    RequestBody body = 3;
 }
 
 message Response{
     int32 version = 1;
-    MessageType type = 2;
-    string message = 3;
-    MessageBody body = 4;
+    ResponseBody body = 4;
 }
