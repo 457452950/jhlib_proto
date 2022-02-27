@@ -13,8 +13,7 @@ message Hi{
 }
 
 message Hello{
-    ServerInfo book_server = 1;
-    ServerInfo sit_server = 2;
+    ServerInfo master_server = 1;
 }
 
 message MessageBody
