@@ -26,8 +26,9 @@ message Hello{
 }
 
 message Login{
-    string user_name = 1;
-    string password = 2;
+    bool is_admin = 1;
+    string user_name = 2;
+    string password = 3;
 }
 
 message RequestBody
@@ -47,12 +48,6 @@ message ResponseBody
     }
 }
 
-enum MessageType
-{
-    ERROR = 0;
-    REQUEST = 1;
-    RESPONSE = 2;
-}
 
 message Request{
     int32 version = 1;
