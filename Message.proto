@@ -51,7 +51,7 @@ message ResponseBody
 
 message Request{
     int32 version = 1;
-    int32 id = 2;
+    string sessionId = 2;
     RequestBody body = 3;
 }
 
