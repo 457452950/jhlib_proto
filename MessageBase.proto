@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package wlb;
+
+
+message ServerInfo
+{
+    string address = 1;
+    uint32 port = 2;
+}
+
+message Error{
+    int32 code = 1;
+    string message = 2;
+}
+
+message Success{
+    int32 code = 1;
+}
+

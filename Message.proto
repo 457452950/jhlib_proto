@@ -1,21 +1,8 @@
 syntax = "proto3";
 
 package wlb;
-
-message ServerInfo
-{
-    string address = 1;
-    uint32 port = 2;
-}
-
-message Error{
-    int32 code = 1;
-    string message = 2;
-}
-
-message Success{
-    int32 code = 1;
-}
+import "MessageBase.proto";
+import "DateBase.proto";
 
 message Hi{
     string client_id = 1;
@@ -29,6 +16,13 @@ message Login{
     bool is_admin = 1;
     string user_name = 2;
     string password = 3;
+}
+
+message StudentInfoReq{
+
+}
+message StudentInfoRes{
+    TabelData table = 1;
 }
 
 message RequestBody
