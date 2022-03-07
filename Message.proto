@@ -30,6 +30,7 @@ message RequestBody
     oneof body {
         Hi hibody = 1;
         Login loginbody = 2;
+        StudentInfoReq reqStbody = 11;
     }
 }
 
@@ -39,6 +40,7 @@ message ResponseBody
         Error errorbody = 1;
         Success successbody = 2;
         Hello hellobody = 3;
+        StudentInfoRes resStbody = 11;
     }
 }
 
