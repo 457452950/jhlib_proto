@@ -29,7 +29,9 @@ message BookInfoReq{
     uint64 count = 2;
 }
 message BookInfoRes{
-    TabelData table = 1;
+    uint64 start = 1;
+    uint64 count = 2;
+    TabelData table = 3;
 }
 
 message RequestBody
