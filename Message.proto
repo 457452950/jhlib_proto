@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package wlb;
 import "MessageBase.proto";
-import "DateBase.proto";
+import "DataBase.proto";
 
 message Hi{
     string client_id = 1;
