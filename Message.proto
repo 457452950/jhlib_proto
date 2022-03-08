@@ -25,8 +25,8 @@ message StudentInfoRes{
     TabelData table = 1;
 }
 message BookInfoReq{
-    int64 start = 1;
-    int64 count = 2;
+    uint64 start = 1;
+    uint64 count = 2;
 }
 message BookInfoRes{
     TabelData table = 1;
