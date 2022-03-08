@@ -24,6 +24,12 @@ message StudentInfoReq{
 message StudentInfoRes{
     TabelData table = 1;
 }
+message BookInfoReq{
+
+}
+message BookInfoRes{
+    TabelData table = 1;
+}
 
 message RequestBody
 {
@@ -31,6 +37,7 @@ message RequestBody
         Hi hibody = 1;
         Login loginbody = 2;
         StudentInfoReq reqStbody = 11;
+        BookInfoReq reqBkbody = 12;
     }
 }
 
@@ -41,6 +48,7 @@ message ResponseBody
         Success successbody = 2;
         Hello hellobody = 3;
         StudentInfoRes resStbody = 11;
+        BookInfoRes resBkbody = 12;
     }
 }
 
