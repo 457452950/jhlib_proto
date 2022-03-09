@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package wlb;
 
-message TabelData {
+message TableData {
     repeated bytes ColumnName = 1;
     int32 ColumnCount = 2;
     int32 RowCount = 3;
