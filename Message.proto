@@ -5,7 +5,7 @@ import "MessageBase.proto";
 import "DataBase.proto";
 
 message Hi{
-    string client_id = 1;
+    bytes client_id = 1;
 }
 
 message Hello{
@@ -14,8 +14,8 @@ message Hello{
 
 message Login{
     bool is_admin = 1;
-    string user_name = 2;
-    string password = 3;
+    bytes user_name = 2;
+    bytes password = 3;
 }
 
 message StudentInfoReq{
@@ -58,12 +58,12 @@ message ResponseBody
 
 message Request{
     int32 version = 1;
-    string sessionId = 2;
+    bytes sessionId = 2;
     RequestBody body = 3;
 }
 
 message Response{
     int32 version = 1;
-    string sessionId = 2;
+    bytes sessionId = 2;
     ResponseBody body = 4;
 }

@@ -3,13 +3,13 @@ syntax = "proto3";
 package wlb;
 
 message TabelData {
-    repeated string ColumnName = 1;
+    repeated bytes ColumnName = 1;
     int32 ColumnCount = 2;
     int32 RowCount = 3;
     repeated ColumnData Column = 4;
 }
 
 message ColumnData {
-    repeated string value = 1;
+    repeated bytes value = 1;
 }
 
