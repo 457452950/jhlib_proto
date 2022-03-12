@@ -4,45 +4,48 @@ package wlb;
 import "MessageBase.proto";
 import "DataBase.proto";
 
-message Hi{
+message Hi {
     bytes client_id = 1;
 }
 
-message Hello{
+message Hello {
     ServerInfo master_server = 1;
 }
 
-message Login{
+message Login {
     bool is_admin = 1;
     bytes user_name = 2;
     bytes password = 3;
 }
 
-message StudentInfoReq{
+message StudentInfoReq {
 
 }
-message StudentInfoRes{
+message StudentInfoRes {
     TableData table = 1;
 }
 
-message BookInfoReq{
+message BookInfoReq {
     uint64 start = 1;
     uint64 count = 2;
 }
-message BookInfoRes{
+message BookInfoRes {
     uint64 start = 1;
     uint64 count = 2;
     TableData table = 3;
 }
 
-message BookInfoSearchReq{
+message BookInfoSearchReq {
     bytes name = 1;
     bytes value = 2;
 }
-message BookInfoSearchRes{
+message BookInfoSearchRes {
     TableData table = 1;
 }
 
+message BookInfoEditReq {
+    repeated UpdataColumn updatas = 1;
+}
 
 message RequestBody
 {
@@ -52,6 +55,7 @@ message RequestBody
         StudentInfoReq reqStbody = 11;
         BookInfoReq reqBkbody = 12;
         BookInfoSearchReq reqBkShbody = 13;
+        BookInfoEditReq reqBkeditbody = 14;
     }
 }
 
