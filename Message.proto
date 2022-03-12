@@ -47,6 +47,10 @@ message BookInfoEditReq {
     repeated UpdataColumn updatas = 1;
 }
 
+message BookInfoAddReq {
+    TableData table = 1;
+}
+
 message RequestBody
 {
     oneof body {
@@ -56,6 +60,7 @@ message RequestBody
         BookInfoReq reqBkbody = 12;
         BookInfoSearchReq reqBkShbody = 13;
         BookInfoEditReq reqBkeditbody = 14;
+        BookInfoAddReq reqBkAddbody = 15;
     }
 }
 
