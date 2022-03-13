@@ -51,6 +51,10 @@ message BookInfoAddReq {
     TableData table = 1;
 }
 
+message BookInfoRemoveReq {
+    repeated bytes key = 1;
+}
+
 message RequestBody
 {
     oneof body {
@@ -61,6 +65,7 @@ message RequestBody
         BookInfoSearchReq reqBkShbody = 13;
         BookInfoEditReq reqBkeditbody = 14;
         BookInfoAddReq reqBkAddbody = 15;
+        BookInfoRemoveReq reqBkRmbody = 16;
     }
 }
 
