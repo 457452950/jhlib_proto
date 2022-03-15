@@ -78,4 +78,14 @@ message BookBorrowInfoRes {
 }
 // 
 
+message BorrowRecordsReq {
+    BorrowInfoType type = 2;
+    bool student_info = 3;
+    bytes key = 4;
+}
 
+message BorrowRecordsRes {
+    BorrowInfoType type = 2;
+    bool student_info = 3;
+    TableData table = 4;
+}

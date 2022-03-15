@@ -16,6 +16,7 @@ message RequestBody
         BookInfoAddReq reqBkAddbody = 15;
         BookInfoRemoveReq reqBkRmbody = 16;
         BookBorrowInfoReq reqBkBrIfbody = 17;
+        BorrowRecordsReq reqBrRdbody = 18;
     }
 }
 
@@ -29,6 +30,7 @@ message ResponseBody
         BookInfoRes resBkbody = 12;
         BookInfoSearchRes resBkShbody = 13;
         BookBorrowInfoRes resBkBrIfbody = 17;
+        BorrowRecordsRes resBrRdbody = 18;
     }
 }
 
