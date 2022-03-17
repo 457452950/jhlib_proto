@@ -32,7 +32,7 @@ message ResponseBody
         BookInfoSearchRes resBkShbody = 13;
         BookBorrowInfoRes resBkBrIfbody = 17;
         BorrowRecordsRes resBrRdbody = 18;
-        SeatInfo4FloorRes reqSeatIfFlbody = 19;
+        SeatInfo4FloorRes resSeatIfFlbody = 19;
     }
 }
 
