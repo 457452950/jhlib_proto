@@ -89,3 +89,21 @@ message BorrowRecordsRes {
     bool student_info = 3;
     TableData table = 4;
 }
+
+// 
+
+message SeatInfoArea {
+    int32 area_number = 1;
+    int32 area_all_seat_count = 2;
+    int32 area_used_seat_count = 3;
+    repeated ColumnData area_seats_info = 4;
+}
+
+message SeatInfo4FloorReq {
+    int32 floor_number = 1;
+}
+
+message SeatInfo4FloorRes {
+    int32 floor_number = 1;
+    repeated SeatInfoArea area_seat = 2;
+}

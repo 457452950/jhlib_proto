@@ -17,6 +17,7 @@ message RequestBody
         BookInfoRemoveReq reqBkRmbody = 16;
         BookBorrowInfoReq reqBkBrIfbody = 17;
         BorrowRecordsReq reqBrRdbody = 18;
+        SeatInfo4FloorReq reqSeatIfFlbody = 19;
     }
 }
 
@@ -31,6 +32,7 @@ message ResponseBody
         BookInfoSearchRes resBkShbody = 13;
         BookBorrowInfoRes resBkBrIfbody = 17;
         BorrowRecordsRes resBrRdbody = 18;
+        SeatInfo4FloorRes reqSeatIfFlbody = 19;
     }
 }
 
