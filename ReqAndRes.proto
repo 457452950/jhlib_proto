@@ -93,7 +93,7 @@ message BorrowRecordsRes {
 // 
 
 message SeatInfo {
-    int32 seat_number = 1;
+    bytes seat_number = 1;
     bytes user_data = 2;
 }
 
