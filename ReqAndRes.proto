@@ -112,3 +112,13 @@ message SeatInfo4FloorRes {
     int32 floor_number = 1;
     repeated SeatInfoArea area_seat = 2;
 }
+
+
+// 
+message SeatBaseInfoReq {
+
+}
+
+message SeatBaseInfoRes {
+    int32 floor_count = 1;
+}
