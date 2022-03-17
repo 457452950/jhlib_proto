@@ -92,11 +92,16 @@ message BorrowRecordsRes {
 
 // 
 
+message SeatInfo {
+    int32 seat_number = 1;
+    bytes user_data = 2;
+}
+
 message SeatInfoArea {
     int32 area_number = 1;
     int32 area_all_seat_count = 2;
     int32 area_used_seat_count = 3;
-    repeated ColumnData area_seats_info = 4;
+    repeated SeatInfo seats_info = 4;
 }
 
 message SeatInfo4FloorReq {
