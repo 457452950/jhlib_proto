@@ -22,10 +22,13 @@ message Login {
 // 
 
 message StudentInfoReq {
-
+    uint64 start = 1;
+    uint64 count = 2;
 }
 message StudentInfoRes {
-    TableData table = 1;
+    uint64 start = 1;
+    uint64 count = 2;
+    TableData table = 3;
 }
 // 
 message BookInfoReq {
