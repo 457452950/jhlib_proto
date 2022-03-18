@@ -122,3 +122,37 @@ message SeatBaseInfoReq {
 message SeatBaseInfoRes {
     int32 floor_count = 1;
 }
+
+//
+
+message StorageInfo {
+    bytes storage_number = 1;
+    bytes user_data = 2;
+}
+
+message StorageInfoArea {
+    int32 area_number = 1;
+    int32 area_all_storage_count = 2;
+    int32 area_used_storage_count = 3;
+    repeated StorageInfo storages_info = 4;
+}
+
+message StorageInfo4FloorReq {
+    int32 floor_number = 1;
+}
+
+message StorageInfo4FloorRes {
+    int32 floor_number = 1;
+    repeated StorageInfoArea area_storage = 2;
+}
+
+// 
+message StorageBaseInfoReq {
+
+}
+
+message StorageBaseInfoRes {
+    int32 floor_count = 1;
+}
+
+

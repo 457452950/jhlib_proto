@@ -19,6 +19,8 @@ message RequestBody
         BorrowRecordsReq reqBrRdbody = 18;
         SeatInfo4FloorReq reqSeatIfFlbody = 19;
         SeatBaseInfoReq reqSeatBaseIfbody = 20;
+        StorageInfo4FloorReq reqSgIfFlbody = 21;
+        StorageBaseInfoReq reqSgBaseIfbody = 22;
     }
 }
 
@@ -35,6 +37,8 @@ message ResponseBody
         BorrowRecordsRes resBrRdbody = 18;
         SeatInfo4FloorRes resSeatIfFlbody = 19;
         SeatBaseInfoRes resSeatBaseIfbody = 20;
+        StorageInfo4FloorRes resSgIfFlbody = 21;
+        StorageBaseInfoRes resSgBaseIfbody = 22;
     }
 }
 
