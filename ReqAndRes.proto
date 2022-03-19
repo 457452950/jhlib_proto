@@ -28,7 +28,7 @@ message StudentInfoReq {
 message StudentInfoRes {
     uint64 start = 1;
     uint64 req_count = 2;
-    uint64 all_count = 3;
+    bytes all_count = 3;
     TableData table = 4;
 }
 // 
@@ -39,7 +39,7 @@ message BookInfoReq {
 message BookInfoRes {
     uint64 start = 1;
     uint64 req_count = 2;
-    uint64 all_count = 3;
+    bytes all_count = 3;
     TableData table = 4;
 }
 // 
@@ -52,7 +52,7 @@ message BookInfoSearchReq {
 // message BookInfoSearchRes {
 //     uint64 start = 1;
 //     uint64 req_count = 2;
-//     uint64 all_count = 3;
+//     bytes all_count = 3;
 //     TableData table = 4;
 // }
 // 
@@ -83,7 +83,7 @@ message BookBorrowInfoReq {
 message BookBorrowInfoRes {
     uint64 start = 1;
     uint64 req_count = 2;
-    uint64 all_count = 3;
+    bytes all_count = 3;
     TableData table = 4;
     BorrowInfoType type = 5;
 }
@@ -177,7 +177,7 @@ message UserInfoSearchReq {
 message UserInfoSearchRes {
     uint64 start = 1;
     uint64 req_count = 2;
-    uint64 all_count = 3;
+    bytes all_count = 3;
     TableData table = 4;
 }
 
