@@ -27,8 +27,9 @@ message StudentInfoReq {
 }
 message StudentInfoRes {
     uint64 start = 1;
-    uint64 count = 2;
-    TableData table = 3;
+    uint64 req_count = 2;
+    uint64 all_count = 3;
+    TableData table = 4;
 }
 // 
 message BookInfoReq {
@@ -37,17 +38,23 @@ message BookInfoReq {
 }
 message BookInfoRes {
     uint64 start = 1;
-    uint64 count = 2;
-    TableData table = 3;
+    uint64 req_count = 2;
+    uint64 all_count = 3;
+    TableData table = 4;
 }
 // 
 message BookInfoSearchReq {
     bytes name = 1;
     bytes value = 2;
+    uint64 start = 3;
+    uint64 count = 4;
 }
-message BookInfoSearchRes {
-    TableData table = 1;
-}
+// message BookInfoSearchRes {
+//     uint64 start = 1;
+//     uint64 req_count = 2;
+//     uint64 all_count = 3;
+//     TableData table = 4;
+// }
 // 
 message BookInfoEditReq {
     repeated UpdataColumn updatas = 1;
@@ -75,9 +82,10 @@ message BookBorrowInfoReq {
 
 message BookBorrowInfoRes {
     uint64 start = 1;
-    uint64 count = 2;
-    BorrowInfoType type = 3;
+    uint64 req_count = 2;
+    uint64 all_count = 3;
     TableData table = 4;
+    BorrowInfoType type = 5;
 }
 // 
 
@@ -158,4 +166,18 @@ message StorageBaseInfoRes {
     int32 floor_count = 1;
 }
 
+//
+
+message UserInfoSearchReq {
+    bytes name = 1;
+    bytes value = 2;
+    uint64 start = 3;
+    uint64 count = 4;
+}
+message UserInfoSearchRes {
+    uint64 start = 1;
+    uint64 req_count = 2;
+    uint64 all_count = 3;
+    TableData table = 4;
+}
 
