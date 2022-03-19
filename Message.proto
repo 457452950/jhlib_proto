@@ -33,7 +33,6 @@ message ResponseBody
         Hello hellobody = 3;
         StudentInfoRes resStbody = 11;
         BookInfoRes resBkbody = 12;
-        BookInfoSearchRes resBkShbody = 13;
         BookBorrowInfoRes resBkBrIfbody = 17;
         BorrowRecordsRes resBrRdbody = 18;
         SeatInfo4FloorRes resSeatIfFlbody = 19;
