@@ -181,3 +181,11 @@ message UserInfoSearchRes {
     TableData table = 4;
 }
 
+//
+
+message ReturnBookReq {
+    bytes UserId = 1;
+    bytes ISBN = 2;
+}
+
+
