@@ -174,13 +174,6 @@ message UserInfoSearchReq {
     uint64 start = 3;
     uint64 count = 4;
 }
-message UserInfoSearchRes {
-    uint64 start = 1;
-    uint64 req_count = 2;
-    bytes all_count = 3;
-    TableData table = 4;
-}
-
 //
 
 message ReturnBookReq {

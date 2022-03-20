@@ -39,7 +39,6 @@ message ResponseBody
         SeatBaseInfoRes resSeatBaseIfbody = 20;
         StorageInfo4FloorRes resSgIfFlbody = 21;
         StorageBaseInfoRes resSgBaseIfbody = 22;
-        UserInfoSearchRes resUsShbody = 23;
     }
 }
 
