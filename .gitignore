@@ -34,3 +34,6 @@
 *.cc
 *.h
 src/
+
+*.js
+*.json
