@@ -22,6 +22,8 @@ message RequestBody
         StorageInfo4FloorReq reqSgIfFlbody = 21;
         StorageBaseInfoReq reqSgBaseIfbody = 22; 
         UserInfoSearchReq reqUsShbody = 23;
+        UserSeatInfoReq reqStStIfbody = 30;
+        UserStorageInfoReq reqStStorIfbody = 31;
     }
 }
 
@@ -40,6 +42,8 @@ message ResponseBody
         SeatBaseInfoRes resSeatBaseIfbody = 20;
         StorageInfo4FloorRes resSgIfFlbody = 21;
         StorageBaseInfoRes resSgBaseIfbody = 22;
+        UserSeatInfoRes resStStIfbody = 30;
+        UserStorageInfoRes resStStorIfbody = 31;
     }
 }
 

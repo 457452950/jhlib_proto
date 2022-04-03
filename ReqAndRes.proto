@@ -182,10 +182,28 @@ message UserInfoSearchReq {
     uint64 count = 4;
 }
 //
-
+// 还书
 message ReturnBookReq {
     bytes UserId = 1;
     bytes ISBN = 2;
 }
+
+// 
+message UserSeatInfoReq {
+    bytes UserId = 1;
+}
+message UserSeatInfoRes {
+    bytes UserId = 1;
+    bytes SeatId = 2;
+}
+message UserStorageInfoReq {
+    bytes UserId = 1;
+}
+message UserStorageInfoRes {
+    bytes UserId = 1;
+    bytes StorageId = 2;
+}
+
+
 
 
