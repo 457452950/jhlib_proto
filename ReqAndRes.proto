@@ -19,6 +19,13 @@ message Login {
     bytes user_name = 2;
     bytes password = 3;
 }
+message StudentLoginRes {
+    bytes user_name = 1;
+    bytes user_id = 2;
+    bytes seat_id = 3;
+    bytes storage_id = 4;
+    int32 borrowed_count = 5;
+}
 // 
 
 message StudentInfoReq {

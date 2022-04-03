@@ -8,7 +8,7 @@ message RequestBody
 {
     oneof body {
         Hi hibody = 1;
-        Login loginbody = 2;
+        Login loginbody = 4;
         StudentInfoReq reqStbody = 11;
         BookInfoReq reqBkbody = 12;
         BookInfoSearchReq reqBkShbody = 13;
@@ -31,6 +31,7 @@ message ResponseBody
         Error errorbody = 1;
         Success successbody = 2;
         Hello hellobody = 3;
+        StudentLoginRes resStLoginbody = 4;
         StudentInfoRes resStbody = 11;
         BookInfoRes resBkbody = 12;
         BookBorrowInfoRes resBkBrIfbody = 17;
