@@ -95,7 +95,7 @@ message BookBorrowInfoRes {
     BorrowInfoType type = 5;
 }
 // 
-
+// 用户借书情况表(ing、ed)(book_id,user_id)
 message BorrowRecordsReq {
     BorrowInfoType type = 2;
     bool student_info = 3;
@@ -133,12 +133,21 @@ message SeatInfo4FloorRes {
 
 
 // 
+message SeatAreaBaseInfo {
+    int32 all_seat_count = 1;
+}
+message SeatFloorBaseInfo {
+    repeated SeatAreaBaseInfo area_info = 1;
+}
+
 message SeatBaseInfoReq {
 
 }
 
 message SeatBaseInfoRes {
     int32 floor_count = 1;
+    int32 area_count = 2;
+    repeated SeatFloorBaseInfo floor_info = 3;
 }
 
 //
@@ -203,7 +212,5 @@ message UserStorageInfoRes {
     bytes UserId = 1;
     bytes StorageId = 2;
 }
-
-
 
 
