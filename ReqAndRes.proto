@@ -214,3 +214,14 @@ message UserStorageInfoRes {
 }
 
 
+message SeatInfo4AreaReq {
+    int32 floor_number = 1;
+    int32 area_number = 2;
+}
+
+message SeatInfo4AreaRes {
+    int32 floor_number = 1;
+    int32 area_number = 2;
+    SeatInfoArea area_seat = 3;
+}
+

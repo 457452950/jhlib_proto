@@ -9,21 +9,22 @@ message RequestBody
     oneof body {
         Hi hibody = 1;
         Login loginbody = 4;
-        StudentInfoReq reqStbody = 11;
-        BookInfoReq reqBkbody = 12;
-        BookInfoSearchReq reqBkShbody = 13;
-        BookInfoEditReq reqBkeditbody = 14;
-        BookInfoAddReq reqBkAddbody = 15;
-        BookInfoRemoveReq reqBkRmbody = 16;
-        BookBorrowInfoReq reqBkBrIfbody = 17;
-        BorrowRecordsReq reqBrRdbody = 18;
-        SeatInfo4FloorReq reqSeatIfFlbody = 19;
-        SeatBaseInfoReq reqSeatBaseIfbody = 20;
-        StorageInfo4FloorReq reqSgIfFlbody = 21;
-        StorageBaseInfoReq reqSgBaseIfbody = 22; 
-        UserInfoSearchReq reqUsShbody = 23;
-        UserSeatInfoReq reqStStIfbody = 30;
-        UserStorageInfoReq reqStStorIfbody = 31;
+        StudentInfoReq reqStbody = 11;          // 总学生信息学
+        BookInfoReq reqBkbody = 12;             // 总图书信息
+        BookInfoSearchReq reqBkShbody = 13;     // 搜索图书信息
+        BookInfoEditReq reqBkeditbody = 14;     // 修改图书信息
+        BookInfoAddReq reqBkAddbody = 15;       // 增加图书信息请求
+        BookInfoRemoveReq reqBkRmbody = 16;     // 删除图书信息亲求
+        BookBorrowInfoReq reqBkBrIfbody = 17;   // 总借阅中、已完成信息表 
+        BorrowRecordsReq reqBrRdbody = 18;      // （用户、图书）（借阅中、已完成）借阅信息
+        SeatInfo4FloorReq reqSeatIfFlbody = 19; // 楼层座位信息
+        SeatBaseInfoReq reqSeatBaseIfbody = 20; // 座位基础信息
+        StorageInfo4FloorReq reqSgIfFlbody = 21;// 楼层的储物柜信息
+        StorageBaseInfoReq reqSgBaseIfbody = 22;// 储物柜基础信息
+        UserInfoSearchReq reqUsShbody = 23;     // 用户信息搜索
+        UserSeatInfoReq reqStStIfbody = 30;     // 单学生座位信息
+        UserStorageInfoReq reqStStorIfbody = 31;// 单学生储物柜信息
+        SeatInfo4AreaReq reqSeatIfAreabody = 32;// 区域的座位信息 
     }
 }
 
@@ -44,6 +45,7 @@ message ResponseBody
         StorageBaseInfoRes resSgBaseIfbody = 22;
         UserSeatInfoRes resStStIfbody = 30;
         UserStorageInfoRes resStStorIfbody = 31;
+        SeatInfo4AreaRes resSeatIfAreabody = 32;// 区域的座位信息 
     }
 }
 
