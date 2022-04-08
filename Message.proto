@@ -26,6 +26,7 @@ message RequestBody
         UserStorageInfoReq reqStStorIfbody = 31;// 单学生储物柜信息
         SeatInfo4AreaReq reqSeatIfAreabody = 32;// 区域的座位信息
         SeatUseReq reqSeatUsebody = 33; 
+        SeatReleaseReq reqSeatReleasebody = 34;
     }
 }
 
