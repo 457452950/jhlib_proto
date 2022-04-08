@@ -24,7 +24,8 @@ message RequestBody
         UserInfoSearchReq reqUsShbody = 23;     // 用户信息搜索
         UserSeatInfoReq reqStStIfbody = 30;     // 单学生座位信息
         UserStorageInfoReq reqStStorIfbody = 31;// 单学生储物柜信息
-        SeatInfo4AreaReq reqSeatIfAreabody = 32;// 区域的座位信息 
+        SeatInfo4AreaReq reqSeatIfAreabody = 32;// 区域的座位信息
+        SeatUseReq reqSeatUsebody = 33; 
     }
 }
 
@@ -45,7 +46,8 @@ message ResponseBody
         StorageBaseInfoRes resSgBaseIfbody = 22;
         UserSeatInfoRes resStStIfbody = 30;
         UserStorageInfoRes resStStorIfbody = 31;
-        SeatInfo4AreaRes resSeatIfAreabody = 32;// 区域的座位信息 
+        SeatInfo4AreaRes resSeatIfAreabody = 32;// 区域的座位信息
+        SeatUseRes resSeatUsebody = 33; 
     }
 }
 

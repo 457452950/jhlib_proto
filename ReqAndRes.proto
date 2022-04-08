@@ -225,3 +225,18 @@ message SeatInfo4AreaRes {
     SeatInfoArea area_seat = 3;
 }
 
+// 使用座位请求
+message SeatUseReq 
+{
+    bytes user_id = 1;
+    int32 floor_id = 2;
+    int32 area_id = 3;
+    int32 seat_id = 4;
+}
+message SeatUseRes 
+{
+    bytes user_id = 1;
+    bytes seat_id = 2;
+}
+
+
