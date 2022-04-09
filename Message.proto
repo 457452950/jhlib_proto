@@ -27,6 +27,9 @@ message RequestBody
         SeatInfo4AreaReq reqSeatIfAreabody = 32;// 区域的座位信息
         SeatUseReq reqSeatUsebody = 33; 
         SeatReleaseReq reqSeatReleasebody = 34;
+        StorageInfo4AreaReq reqStorageIfAreabody = 35;// 区域的储物柜信息
+        StorageUseReq reqStorageUsebody = 36; 
+        StorageReleaseReq reqStorageReleasebody = 37;
     }
 }
 
@@ -49,6 +52,8 @@ message ResponseBody
         UserStorageInfoRes resStStorIfbody = 31;
         SeatInfo4AreaRes resSeatIfAreabody = 32;// 区域的座位信息
         SeatUseRes resSeatUsebody = 33; 
+        StorageInfo4AreaRes resStorageIfAreabody = 35;// 区域的座位信息
+        StorageUseRes resStorageUsebody = 36; 
     }
 }
 

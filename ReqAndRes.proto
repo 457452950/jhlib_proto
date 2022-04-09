@@ -174,12 +174,20 @@ message StorageInfo4FloorRes {
 }
 
 // 
+message StorageAreaBaseInfo {
+    int32 all_storage_count = 1;
+}
+message StorageFloorBaseInfo {
+    repeated StorageAreaBaseInfo area_info = 1;
+}
 message StorageBaseInfoReq {
 
 }
 
 message StorageBaseInfoRes {
     int32 floor_count = 1;
+    int32 area_count = 2;
+    repeated StorageFloorBaseInfo floor_info = 3;
 }
 
 //
@@ -225,6 +233,17 @@ message SeatInfo4AreaRes {
     SeatInfoArea area_seat = 3;
 }
 
+message StorageInfo4AreaReq {
+    int32 floor_number = 1;
+    int32 area_number = 2;
+}
+
+message StorageInfo4AreaRes {
+    int32 floor_number = 1;
+    int32 area_number = 2;
+    StorageInfoArea area_storage = 3;
+}
+
 // 使用座位请求
 message SeatUseReq 
 {
@@ -246,5 +265,28 @@ message SeatReleaseReq
     int32 floor_id = 2;
     int32 area_id = 3;
     int32 seat_id = 4;
+}
+
+// 使用座位请求
+message StorageUseReq 
+{
+    bytes user_id = 1;
+    int32 floor_id = 2;
+    int32 area_id = 3;
+    int32 storage_id = 4;
+}
+message StorageUseRes 
+{
+    bytes user_id = 1;
+    bytes storage_id = 2;
+}
+
+// 退座
+message StorageReleaseReq
+{
+    bytes user_id = 1;
+    int32 floor_id = 2;
+    int32 area_id = 3;
+    int32 storage_id = 4;
 }
 
