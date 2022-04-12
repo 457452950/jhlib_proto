@@ -30,7 +30,8 @@ message RequestBody
         StorageInfo4AreaReq reqStorageIfAreabody = 35;// 区域的储物柜信息
         StorageUseReq reqStorageUsebody = 36; 
         StorageReleaseReq reqStorageReleasebody = 37;
-        ReturnBookReq reqBookReturnbody = 38;
+        BorrowBookReq reqBookBorrowbody = 38;
+        ReturnBookReq reqBookReturnbody = 39;
     }
 }
 
@@ -55,6 +56,7 @@ message ResponseBody
         SeatUseRes resSeatUsebody = 33; 
         StorageInfo4AreaRes resStorageIfAreabody = 35;// 区域的座位信息
         StorageUseRes resStorageUsebody = 36; 
+        BorrowBookRes resBookBorrowbody = 38;
     }
 }
 

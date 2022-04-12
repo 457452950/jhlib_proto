@@ -198,7 +198,17 @@ message UserInfoSearchReq {
     uint64 start = 3;
     uint64 count = 4;
 }
-//
+
+// 借书
+message BorrowBookReq {
+    bytes UserId = 1;
+    bytes ISBN = 2;
+}
+message BorrowBookRes {
+    bytes UserId = 1;
+    bytes ISBN = 2;
+    int32 result = 3;
+}
 // 还书
 message ReturnBookReq {
     bytes UserId = 1;
